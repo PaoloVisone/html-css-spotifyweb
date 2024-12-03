@@ -6,12 +6,12 @@
 
 header {
     display: flex;
+    height: calc(100vh - 100px);
 }
 
 nav {
     width: 300px;
-    height: calc(100vh - 100px);
-    overflow: auto;
+    height: 100vh;
     background-color: black;
 }
 
@@ -25,15 +25,14 @@ nav {
 
 main {
     background-color: darkslateblue;
+    overflow: auto;
 }
 
 #link {
-    width: 100%;
     text-align: center;
 }
 
 #container {
-    width: calc(100vw -300px);
     padding: 20px;
 }
 
@@ -42,10 +41,8 @@ a {
     color: gray;
 }
 
-
 footer {
     width: 100vw;
     height: 100px;
-    overflow: auto;
     background-color: gray;
 }

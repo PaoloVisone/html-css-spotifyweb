@@ -13,9 +13,7 @@ header {
 
 nav {
     width: 300px;
-    /* height: calc(100vh - 100px); */
     background-color: black;
-    /* overflow: auto; */
     color: gray;
     padding: 10px;
 }
@@ -154,12 +152,10 @@ main {
     width: 100%;
 }
 
-
 #container {
     padding: 10px;
     color: white;
 }
-
 
 /* MAIN NAV */
 
@@ -183,7 +179,7 @@ main {
 /* REGOLE DEI CONTENUTI DEL MAIN */
 
 h1 {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .media-selection {
@@ -295,12 +291,9 @@ footer {
     padding: 10px;
 }
 
-.fa-regular {
-    color: white;
-}
-
-.fa-solid {
-    color: white;
+.font .fa-regular,
+.font .fa-solid {
+    color: gray;
 }
 
 /* PLAYER */
@@ -311,6 +304,7 @@ footer {
 
 #player-up {
     text-align: center;
+    color: white;
 }
 
 #player-up>i {
@@ -343,12 +337,16 @@ footer {
 
 #player-name>a:hover {
     text-decoration: underline;
+    color: white;
 }
 
 /* #player-nav>.fa-solid:hover, */
 .font .fa-regular:hover,
-.font .fa-solid:hover,
+.font .fa-solid:hover {
+    color: white;
+}
+
 #player-up .fa-solid:hover,
 #player-up .fa-regular:hover {
-    font-size: 25px;
+    font-size: 22px;
 }

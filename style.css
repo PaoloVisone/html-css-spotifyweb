@@ -13,59 +13,66 @@ header {
 
 nav {
     width: 300px;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     background-color: black;
-    overflow: auto;
+    /* overflow: auto; */
     color: gray;
+    padding: 10px;
 }
 
 /* LOGO */
 
 #logo {
-    width: 200px;
+    width: 100px;
 }
 
-nav>#nav-bar {
-    padding: 10px;
+/* NAV LIST LINKS */
+
+#playlist {
+    height: 200px;
+    overflow: auto;
 }
 
-/* NAV LINKS */
-
-#nav-links {
-    margin: 10px 0;
+ul li {
+    padding: 10px 0;
 }
 
 .list {
     text-decoration: none;
-    /* font-size: 16px; */
     color: gray;
 }
 
 .list>img {
-    width: 20px;
+    width: 18px;
     line-height: 100%;
     vertical-align: middle;
 }
+
+/* :HOVER */
 
 #nav-list li:hover {
     border-left: 2px solid yellowgreen;
 }
 
-#nav-list .list:hover {
+.list:hover {
     color: white;
+}
+
+.text:hover {
+    color: white;
+}
+
+#btn-create:hover {
+    background-color: white;
 }
 
 h2 {
     color: white;
-    font-size: 18px;
-    padding: 15px 0;
+    font-size: 16px;
+    padding: 10px 0;
 }
 
 /* BUTTON CREATE PLAYLIST */
-
-#create {
-    padding: 10px 0;
-}
 
 #btn-create {
     padding: 2px 8px;
@@ -81,23 +88,20 @@ h2 {
     cursor: pointer;
 }
 
-/* PLAYLIST CREATED */
-
-ul li {
-    padding: 8px 0;
-}
-
 /* DOWNLOAD */
 
 #end-nav {
-    margin-top: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
 }
 
 /* LINE */
 
 #line {
-    border: 2px solid gray;
-    margin: 10px 0;
+    border: 1px solid gray;
+    margin: 8px 0;
 }
 
 /* PROFILE */
@@ -122,6 +126,7 @@ ul li {
     display: flex;
     justify-content: end;
     align-items: center;
+    z-index: 1000;
 }
 
 #btn-upgrade {
@@ -131,8 +136,14 @@ ul li {
     border-radius: 999px;
     font-size: 14px;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 10px 20px;
 
+}
+
+/* :HOVER */
+
+#btn-upgrade:hover {
+    padding: 12px 24px;
 }
 
 /* MAIN */
@@ -143,10 +154,12 @@ main {
     width: 100%;
 }
 
+
 #container {
     padding: 10px;
     color: white;
 }
+
 
 /* MAIN NAV */
 
@@ -160,33 +173,75 @@ main {
     padding: 10px;
 }
 
+/* :HOVER */
+
 .links:hover {
     border-bottom: 2px solid yellowgreen;
-}
-
-h1 {
-    padding: 20px 0;
+    color: white;
 }
 
 /* REGOLE DEI CONTENUTI DEL MAIN */
+
+h1 {
+    margin: 20px 0;
+}
 
 .media-selection {
     display: flex;
     flex-wrap: wrap;
 }
 
-.media {
-    text-align: center;
-    max-width: calc(100% / 6 - 10px);
+.card {
+    width: calc(100% / 6 - 10px);
     margin-right: 10px;
 }
 
-.media>img {
+.up-card {
     width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.up-card>img {
+    width: 100%;
+}
+
+.up-card>.fa-circle-play {
+    background-color: rgba(83, 82, 82, 0.318);
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 380%;
+    vertical-align: middle;
+    display: none;
+}
+
+.testo {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.title-media {
+    font-weight: bold;
+}
+
+.advice {
+    margin: 20px 0;
 }
 
 .circle {
     border-radius: 999px;
+}
+
+
+/* :hover */
+
+.up-card:hover .fa-circle-play {
+    display: block;
 }
 
 /* FOOTER */
@@ -197,7 +252,6 @@ footer {
     background-color: rgba(40, 40, 40, 1);
     display: flex;
     justify-content: space-between;
-    padding: 5px;
 }
 
 /* PARTE SX */
@@ -206,6 +260,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 #player-img>img {
@@ -217,8 +272,10 @@ footer {
     padding: 20px;
 }
 
-#player-name>span {
+#player-name>a {
     font-size: 14px;
+    color: black;
+    text-decoration: none;
 }
 
 #title-player {
@@ -279,4 +336,19 @@ footer {
 
 #player-vol {
     display: flex;
+    padding: 10px;
+}
+
+/* :hover */
+
+#player-name>a:hover {
+    text-decoration: underline;
+}
+
+/* #player-nav>.fa-solid:hover, */
+.font .fa-regular:hover,
+.font .fa-solid:hover,
+#player-up .fa-solid:hover,
+#player-up .fa-regular:hover {
+    font-size: 25px;
 }

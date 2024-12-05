@@ -19,36 +19,30 @@
 
         <nav>
 
-            <div id="nav-bar">
+            <!-- LOGO -->
 
-                <!-- LOGO -->
+            <a href="index.html"><img id="logo" src="img/logo.svg" alt="logo"></a>
 
-                <a href="index.html"><img id="logo" src="img/logo.svg" alt="logo"></a>
+            <!-- NAV LIST LINKS -->
 
-                <!-- NAV LINKS -->
+            <ul id="nav-list">
+                <li><a class="list" href="#"><img src="img/home.svg" alt="home"> Home</a></li>
+                <li><a class="list" href="#"><img src="img/search.svg" alt="search"> Cerca</a></li>
+                <li><a class="list" href="#"><img src="img/libreria.svg" alt="libreria"> La tua libreria</a>
+                </li>
+            </ul>
 
-                <div id="nav-links">
-                    <ul id="nav-list">
-                        <li><a class="list" href="#"><img src="img/home.svg" alt="home"> Home</a></li>
-                        <li><a class="list" href="#"><img src="img/search.svg" alt="search"> Cerca</a></li>
-                        <li><a class="list" href="#"><img src="img/libreria.svg" alt="libreria"> La tua libreria</a>
-                        </li>
-                    </ul>
-                </div>
 
-                <h2>PLAYLIST</h2>
+            <h2>PLAYLIST</h2>
 
-                <!-- BUTTON CREATE PLAYLIST -->
+            <!-- BUTTON CREATE PLAYLIST -->
 
-                <div id="create">
+            <div id="btn-create">+</div>
+            <span class="text">Crea Playlist</span>
 
-                    <div id="btn-create">+</div>
-                    <span class="text">Crea Playlist</span>
+            <!-- PLAYLIST CREATED -->
 
-                </div>
-
-                <!-- PLAYLIST CREATED -->
-
+            <div id="playlist">
                 <ul>
                     <li><a class="list" href="#">Nome Playlist</a></li>
                     <li><a class="list" href="#">Nome Playlist</a></li>
@@ -57,22 +51,21 @@
                     <li><a class="list" href="#">Nome Playlist</a></li>
                     <li><a class="list" href="#">Nome Playlist</a></li>
                 </ul>
+            </div>
 
-                <!-- DOWNLOAD -->
+            <!-- DOWNLOAD -->
 
 
-                <div id="end-nav">
-                    <a class="list" href="#"><img src="img/download.svg" alt="download"> Installa app</a>
+            <div id="end-nav">
+                <a class="list" href="#"><img src="img/download.svg" alt="download"> Installa app</a>
 
-                    <!-- LINE -->
+                <!-- LINE -->
 
-                    <div id="line"></div>
+                <div id="line"></div>
 
-                    <!-- PROFILE -->
+                <!-- PROFILE -->
 
-                    <a class="list withe" href="#"><img id="profile" src="img/profile.svg" alt="profile"> Johon Doe</a>
-                </div>
-
+                <a class="list withe" href="#"><img id="profile" src="img/profile.svg" alt="profile"> Johon Doe</a>
             </div>
 
         </nav>
@@ -91,8 +84,6 @@
 
             <div id="container">
 
-
-
                 <!-- MAIN NAV -->
 
                 <div id="row-link">
@@ -108,78 +99,125 @@
 
                 <div class="media-selection">
 
-                    <div class="media">
-                        <img src="img/metal_lifting.jpg" alt="metal_lifting">
-                        <p class="title-media">Havy Metal</p>
-                        <span>Subtitle</span>
+                    <div class="card">
+                        <div class="up-card">
+                            <img class="picture" src="img/metal_lifting.jpg" alt="metal_lifting">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Havy Metal</p>
+                            <span>Subtitle</span>
+                        </div>
                     </div>
 
-                    <div class="media">
-                        <img src="img/stranger.jpeg" alt="stranger">
-                        <p class="title-media">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</p>
-                        <span>Kyle Dixon & Michael Stein</span>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/stranger.jpeg" alt="stranger">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</p>
+                            <span>Kyle Dixon & Michael Stein</span>
+                        </div>
                     </div>
 
-                    <div class="media">
-                        <img src="img/aquietplace.jpeg" alt="aquietplace">
-                        <p class="title-media">A quiet place</p>
-                        <span>Subtitle</span>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/aquietplace.jpeg" alt="aquietplace">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">A quiet place</p>
+                            <span>Subtitle</span>
+                        </div>
                     </div>
-
-                    <div class="media">
-                        <img src="img/split.jpeg" alt="split">
-                        <p class="title-media">Split</p>
-                        <span>Subtitle</span>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/split.jpeg" alt="split">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Split</p>
+                            <span>Subtitle</span>
+                        </div>
                     </div>
-
-                    <div class="media">
-                        <img src="img/cure.jpeg" alt="cure">
-                        <p class="title-media">A cure for wellnes</p>
-                        <span>Subtitle</span>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/cure.jpeg" alt="cure">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">A cure for wellnes</p>
+                            <span>Subtitle</span>
+                        </div>
                     </div>
-
-                    <div class="media">
-                        <img src="img/sinister.jpeg" alt="sinister">
-                        <p class="title-media">Sinister</p>
-                        <span>Subtitle</span>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/sinister.jpeg" alt="sinister">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Sinister</p>
+                            <span>Subtitle</span>
+                        </div>
                     </div>
-
                 </div>
+
                 <!-- Creati -->
+
                 <h1>Creato da Johon Doe</h1>
 
-                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <p class="advice">Più ascolti, più accurati saranno i suggerimenti.</p>
 
                 <div class="media-selection">
 
-                    <div class="media">
-                        <img src="img/radar.jpeg" alt="radar">
-                        <p class="title-media">Release radar</p>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/radar.jpeg" alt="radar">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Release radar</p>
+                        </div>
                     </div>
-
-                    <div class="media">
-                        <img src="img/mixdaily.jpeg" alt="mixdaily">
-                        <p class="title-media">Daily mix 1</p>
+                    <div class="card">
+                        <div class="up-card">
+                            <img src="img/mixdaily.jpeg" alt="mixdaily">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Daily mix 1</p>
+                        </div>
                     </div>
 
                 </div>
+
                 <!-- Popolari -->
+
                 <h1>Artisti più popolari</h1>
 
-                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <p class="advice">Più ascolti, più accurati saranno i suggerimenti.</p>
 
                 <div class="media-selection">
 
-                    <div class="media">
-                        <img class="circle" src="img/youg.jpeg" alt="youg">
-                        <p class="title-media">Lana del rey</p>
+                    <div class="card">
+                        <div class="up-card">
+                            <img class="circle" src="img/youg.jpeg" alt="youg">
+                            <i class="fa-regular fa-circle-play circle"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Lana del rey</p>
+                        </div>
                     </div>
-
-                    <div class="media">
-                        <img class="circle" src="img/einaudi.jpeg" alt="einaudi">
-                        <p class="title-media">Einaudi</p>
+                    <div class="card">
+                        <div class="up-card">
+                            <img class="circle" src="img/einaudi.jpeg" alt="einaudi">
+                            <i class="fa-regular fa-circle-play circle"></i>
+                        </div>
+                        <div class="testo">
+                            <p class="title-media">Einaudi</p>
+                        </div>
                     </div>
-
                 </div>
 
             </div>
@@ -196,7 +234,7 @@
             </div>
             <div id="player-name">
                 <p id="title-player">Sinister</p>
-                <span>Brano nome</span>
+                <a href="">Brano nome</a>
             </div>
             <div class="font">
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
@@ -247,24 +285,7 @@
             <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
     </footer>
-
 </body>
 
 </html>

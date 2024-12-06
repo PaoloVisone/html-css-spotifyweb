@@ -79,8 +79,6 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    text-align: center;
-
 }
 
 .end-nav img {
@@ -418,6 +416,7 @@ footer {
         height: 40%;
         display: flex;
         justify-content: end;
+        text-align: center;
     }
 
     #line {

@@ -19,31 +19,44 @@
 
         <nav>
 
-            <!-- LOGO -->
+            <!-- Logo -->
 
-            <a href="index.html"><img id="logo" src="img/logo.svg" alt="logo"></a>
+            <div id="nav-logo">
+                <a href="index.html"><img id="logo" src="img/logo.svg" alt=""></a>
+                <a href="index.html"><img id="logo-small" src="img/logo-small.svg" alt=""></a>
+            </div>
 
-            <!-- NAV LIST LINKS -->
+            <!-- NAV POINT -->
 
-            <ul id="nav-list">
-                <li><a class="list" href="#"><img src="img/home.svg" alt="home"> Home</a></li>
-                <li><a class="list" href="#"><img src="img/search.svg" alt="search"> Cerca</a></li>
-                <li><a class="list" href="#"><img src="img/libreria.svg" alt="libreria"> La tua libreria</a>
-                </li>
-            </ul>
+            <div class="nav-point">
+                <div class="icon-point">
+                    <img class="icon" src="img/home.svg" alt="">
+                    <a class="list" href="#"> Home</a>
+                </div>
+                <div class="icon-point">
+                    <img class="icon" src="img/search.svg" alt="">
+                    <a class="list" href="#"> Cerca</a>
+                </div>
+                <div class="icon-point">
+                    <img class="icon" src="img/libreria.svg" alt="">
+                    <a class="list" href="#"> La tua libreria</a>
+                </div>
+            </div>
 
+            <div class="playlist">
+                <h2>PLAYLIST</h2>
 
-            <h2>PLAYLIST</h2>
+                <!-- BUTTON CREATE PLAYLIST -->
 
-            <!-- BUTTON CREATE PLAYLIST -->
-
-            <div id="btn-create">+</div>
-            <span class="text">Crea Playlist</span>
+                <div id="btn-create">+</div>
+                <span class="text">Crea Playlist</span>
+            </div>
 
             <!-- PLAYLIST CREATED -->
 
-            <div id="playlist">
+            <div class="name-playlist">
                 <ul>
+                    <li><a class="list" href="#">Nome Playlist</a></li>
                     <li><a class="list" href="#">Nome Playlist</a></li>
                     <li><a class="list" href="#">Nome Playlist</a></li>
                     <li><a class="list" href="#">Nome Playlist</a></li>
@@ -53,21 +66,25 @@
                 </ul>
             </div>
 
-            <!-- DOWNLOAD -->
+            <div class="end-nav">
 
+                <!-- DOWNLOAD -->
 
-            <div id="end-nav">
-                <a class="list" href="#"><img src="img/download.svg" alt="download"> Installa app</a>
+                <div id="installer">
+                    <img src="img/download.svg" alt="download">
+                    <a class="list" href="#"> Installa app</a>
+                </div>
 
                 <!-- LINE -->
 
                 <div id="line"></div>
 
                 <!-- PROFILE -->
-
-                <a class="list withe" href="#"><img id="profile" src="img/profile.svg" alt="profile"> Johon Doe</a>
+                <div id="profile">
+                    <img id="profile-img" src="img/profile.svg" alt="profile">
+                    <a class="list withe" href="#"> Johon Doe</a>
+                </div>
             </div>
-
         </nav>
 
         <!-- PARTE CENTRALE DELLA WEB APP -->
@@ -229,9 +246,9 @@
         <!-- PARTE SX DESCRIZIONE -->
 
         <div id="player-nav">
-            <div id="player-img">
-                <img src="img/sinister.jpeg" alt="sinister">
-            </div>
+            <!-- <div id="player-img"> -->
+            <img src="img/sinister.jpeg" alt="sinister">
+            <!-- </div> -->
             <div id="player-name">
                 <p id="title-player">Sinister</p>
                 <a href="">Brano nome</a>
@@ -265,7 +282,7 @@
 
                 <span>0:00</span>
 
-                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                <input type="range" class="form-range" min="0" max="5" step="0.5" id="audioRange">
 
                 <span>4:00</span>
             </div>
@@ -282,7 +299,7 @@
 
             <!-- RANGE VOLUME -->
 
-            <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+            <input type="range" class="form-range" min="0" max="5" step="0.5" id="volumRange">
 
         </div>
     </footer>
